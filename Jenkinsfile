@@ -4,7 +4,7 @@ pipeline {
         stage('SonarQube Code Quality Check') {
         	agent {
         	    docker {
-    	            image 'dockerrock123/spring-boot-jpa'
+    	            image 'dockerrock123/spring-boot-jpa:v1'
     	        }
         	}
 
