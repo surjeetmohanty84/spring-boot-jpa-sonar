@@ -1,8 +1,8 @@
 pipeline{
     agent any
     stages {
- 		stage('Example Build') {
-		    sh 
+ 		stage('SOnarQube Code quality') {
+		    echo "Excuting Sonar quality test"
 
 		 }       
     }
