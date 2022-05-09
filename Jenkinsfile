@@ -1,7 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage('Example Stage 1') {
+        stage('SonarQube Code Quality Check') {
+        	agent {
+        	    docker {
+    	            image 'dockerrock123/spring-boot-jpa'
+    	        }
+        	}
+
             steps {
                 parallel(
                         "step 1": { echo "hello" },
